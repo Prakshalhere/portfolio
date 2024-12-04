@@ -1,0 +1,188 @@
+.projects-section {
+    padding: 3rem 2rem;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-header h1 {
+    font-size: 2.5rem;
+    color: var(--orange);
+    font-weight: bold;
+  }
+  
+  .projects-header p {
+    color: var(--gray);
+    font-size: 18px;
+    /* margin-top: 0.5rem; */
+    margin-bottom: 1rem;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    width: calc(50% - 1rem); /* Two cards per row */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 0 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-info h2 {
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+    margin: 1rem 0 0 0;
+  }
+  
+  .project-info p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  .project-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+ /* Base Button Styles */
+/* Base Button Styles */
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Gradient Button (Source Code) */
+.gradient-button {
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%); /* Orange Gradient */
+  color: white;
+  box-shadow: 0px 5px 25px 3px rgba(251, 161, 40, 0.42); /* Orange Shadow */
+  border: none;
+}
+
+.gradient-button:hover {
+  opacity: 0.9;
+}
+
+/* Outline Button (Visit App) */
+.outline-button {
+  border: 2px solid var(--primaryColor); /* Set primaryColor as your theme color */
+  color: var(--primaryColor);
+  background: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Added subtle shadow for outline button */
+}
+
+.outline-button:hover {
+  background: var(--primaryColor);
+  /* color: white; */
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Button Container */
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Focus and Active States for Better Accessibility */
+.button:focus,
+.gradient-button:focus,
+.outline-button:focus {
+  outline: 3px solid var(--primaryColor);
+  outline-offset: 2px;
+}
+
+.button:active,
+.gradient-button:active,
+.outline-button:active {
+  transform: scale(0.98);
+}
+
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 100%; /* Full width for mobile */
+      margin-bottom: 2rem; /* Add spacing between cards */
+    }
+  
+    .project-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .project-info p {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+  
+    .project-image {
+      height: 150px; /* Adjust image size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-section{
+      padding: 0 2rem;
+    }
+    .projects-header h1 {
+      font-size: 2rem;
+    }
+  
+    .projects-header p {
+      font-size: 1rem;
+    }
+  
+    .button {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.8rem;
+    }
+  
+    .project-info p {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  
+    .project-image {
+      height: 120px; /* Smaller image size for very small screens */
+    }
+  }
+  

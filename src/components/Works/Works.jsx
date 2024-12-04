@@ -18,7 +18,7 @@ const Works = () => {
     <div className="works" id="works">
       {/* left side */}
       <div className="w-left">
-        <div className="awesome">
+        <div className="w-awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
             Works for All these
