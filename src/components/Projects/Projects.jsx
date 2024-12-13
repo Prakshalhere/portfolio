@@ -1,34 +1,39 @@
 import React from "react";
 import "./Projects.css";
-// import FoodDeliveryImg from "../../img/food-delivery.png";
+import CulinaryCornerImg from "../../img/culinary-corner.png";
 import EcommerceImg from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
+
 
 const Projects = () => {
   return (
     <div className="projects-section" id="projects">
       <div className="projects-header">
         <h1>Recent Projects</h1>
-        <p>Here are some of my recent projects showcasing my skills in full-stack web development.</p>
+        <p>
+          Here are some of my recent projects showcasing my skills in full-stack
+          web development.
+        </p>
       </div>
 
       <div className="projects-container">
-        {/* Food Delivery App */}
+        {/* Culinary Corner */}
         <div className="project-card">
-          <img src={HOC} alt="Food Delivery App" className="project-image" />
+          <img src={CulinaryCornerImg} alt="Food Delivery App" className="project-image" />
           <div className="project-info">
-            <h2>Food Delivery App</h2>
+            <h2>Culinary Corner</h2>
             <p>
-              A full-stack application enabling users to browse menus, add items to the cart, and
-              make secure payments via Stripe integration. Includes real-time order tracking and
-              admin panel for managing restaurants.
+              A food delivery application where users can seamlessly browse
+              menus, place orders, and make secure payments using Stripe
+              integration. Features include user authentication and an admin
+              panel for managing restaurants and orders.
             </p>
             <p>
-              <strong>Tech Stack:</strong> React, Redux, Node.js, Express.js, MongoDB, Stripe API
+              <strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB,
+              Stripe, JWT, Context API
             </p>
             <div className="project-buttons">
               <a
-                href="https://github.com/your-repo/food-delivery"
+                href="https://github.com/Prakshalhere/Culinary-Corner"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button gradient-button"
@@ -47,18 +52,22 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* E-Commerce Platform */}
+        {/* Homzy */}
         <div className="project-card">
-          <img src={EcommerceImg} alt="E-Commerce Platform" className="project-image" />
+          <img
+            src={EcommerceImg}
+            alt="E-Commerce Platform"
+            className="project-image"
+          />
           <div className="project-info">
-            <h2>E-Commerce Platform</h2>
+            <h2>Homzy</h2>
             <p>
-              A fully functional e-commerce site with product filtering, user authentication, and
-              a dynamic admin dashboard for inventory management. Integrated with PayPal for secure
-              payments.
+              A real estate platform allowing users to book visits, add
+              properties, and manage favorites. Integrated map functionality for
+              property locations and secure user authentication via Auth0.
             </p>
             <p>
-              <strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB, PayPal API
+              <strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB, Auth0, Prisma
             </p>
             <div className="project-buttons">
               <a
