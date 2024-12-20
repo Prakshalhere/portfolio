@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import CulinaryCornerImg from "../../img/culinary-corner.png";
-import EcommerceImg from "../../img/ecommerce.png";
+import HomzyImg from "../../img/homzy.png";
 
 
 const Projects = () => {
@@ -41,7 +41,7 @@ const Projects = () => {
                 Source Code
               </a>
               <a
-                href="https://your-live-app-url.com"
+                href="https://culinary-corner-frontend.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button outline-button"
@@ -55,7 +55,7 @@ const Projects = () => {
         {/* Homzy */}
         <div className="project-card">
           <img
-            src={EcommerceImg}
+            src={HomzyImg}
             alt="E-Commerce Platform"
             className="project-image"
           />
@@ -71,7 +71,7 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <a
-                href="https://github.com/your-repo/ecommerce"
+                href="https://github.com/Prakshalhere/Homzy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button gradient-button"
@@ -79,7 +79,7 @@ const Projects = () => {
                 Source Code
               </a>
               <a
-                href="https://your-ecommerce-app-url.com"
+                href="https://homzy-7dbv.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button outline-button"
